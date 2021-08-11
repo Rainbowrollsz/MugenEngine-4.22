@@ -1,0 +1,121 @@
+Begin Object Class=/Script/Engine.Material Name="sonic_gm_shoes_bottom"
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAppendVector Name="MaterialExpressionAppendVector_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_5"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionAdd_0"
+      A=(Expression=MaterialExpressionTextureCoordinate'"sonic_gm_shoes_bottom:MaterialExpressionTextureCoordinate_2"')
+      B=(Expression=MaterialExpressionAppendVector'"sonic_gm_shoes_bottom:MaterialExpressionAppendVector_0"')
+      MaterialExpressionEditorX=-480
+      MaterialExpressionEditorY=224
+      MaterialExpressionGuid=911508314FC959A24C9A0CB898A3EF3A
+      Material=Material'"sonic_gm_shoes_bottom"'
+   End Object
+   Begin Object Name="MaterialExpressionAppendVector_0"
+      A=(Expression=MaterialExpressionScalarParameter'"sonic_gm_shoes_bottom:MaterialExpressionScalarParameter_0"')
+      B=(Expression=MaterialExpressionScalarParameter'"sonic_gm_shoes_bottom:MaterialExpressionScalarParameter_1"')
+      MaterialExpressionEditorX=-624
+      MaterialExpressionEditorY=288
+      MaterialExpressionGuid=3D7BDF0F476BFFA540340EB8542BC793
+      Material=Material'"sonic_gm_shoes_bottom"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0"
+      A=(Expression=MaterialExpressionTextureSample'"sonic_gm_shoes_bottom:MaterialExpressionTextureSample_3"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      ConstB=0.500000
+      MaterialExpressionEditorX=-192
+      MaterialExpressionEditorY=288
+      MaterialExpressionGuid=ADEE24D941E6F1037DF281967D53085D
+      Material=Material'"sonic_gm_shoes_bottom"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0"
+      DefaultValue=0.750000
+      ParameterName="U Offset"
+      ExpressionGUID=265F851F454CD0DF8A22C69F34EDDA7C
+      MaterialExpressionEditorX=-768
+      MaterialExpressionEditorY=272
+      MaterialExpressionGuid=F6C5D0F64DDF9E49D185EC91713F33A5
+      Material=Material'"sonic_gm_shoes_bottom"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_1"
+      ParameterName="V Offset"
+      ExpressionGUID=BE4FF65A4BA5DC3CF044E19C9D3920A0
+      MaterialExpressionEditorX=-768
+      MaterialExpressionEditorY=352
+      MaterialExpressionGuid=D63750EC4431FCE90F94FEB1D7D89E17
+      Material=Material'"sonic_gm_shoes_bottom"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_2"
+      MaterialExpressionEditorX=-624
+      MaterialExpressionEditorY=224
+      MaterialExpressionGuid=19D33B1D4549742F0D0EB483939FEE5F
+      Material=Material'"sonic_gm_shoes_bottom"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_1"
+      Coordinates=(Expression=MaterialExpressionAdd'"sonic_gm_shoes_bottom:MaterialExpressionAdd_0"')
+      Texture=Texture2D'"/Game/Characters/Sonic/Models/Sonic/Textures/DirtMap.DirtMap"'
+      MaterialExpressionEditorX=-384
+      MaterialExpressionEditorY=224
+      MaterialExpressionGuid=9F8C627B4BC54C32F39E44AE23E1C1D4
+      Material=Material'"sonic_gm_shoes_bottom"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_3"
+      Texture=Texture2D'"/Game/Characters/Sonic/Models/Sonic/Textures/chr_sonic_cloth_dif_HD.chr_sonic_cloth_dif_HD"'
+      MaterialExpressionEditorX=-384
+      MaterialExpressionGuid=9F8C627B4BC54C32F39E44AE23E1C1D4
+      Material=Material'"sonic_gm_shoes_bottom"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_5"
+      Coordinates=(Expression=MaterialExpressionAdd'"sonic_gm_shoes_bottom:MaterialExpressionAdd_0"')
+      Texture=Texture2D'"/Game/Characters/Sonic/Models/Sonic/Textures/ShoeScratches.ShoeScratches"'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-384
+      MaterialExpressionEditorY=448
+      MaterialExpressionGuid=9F8C627B4BC54C32F39E44AE23E1C1D4
+      Material=Material'"sonic_gm_shoes_bottom"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_3"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Specular=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_1"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Normal=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_5"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   EmissiveColor=(Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   ShadingModel=MSM_Subsurface
+   ShadingModels=(ShadingModelField=4)
+   SubsurfaceColor=(Expression=MaterialExpressionMultiply'"MaterialExpressionMultiply_0"')
+   bUsedWithSkeletalMesh=True
+   Expressions(0)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_3"'
+   Expressions(1)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_1"'
+   Expressions(2)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_5"'
+   Expressions(3)=MaterialExpressionMultiply'"MaterialExpressionMultiply_0"'
+   Expressions(4)=MaterialExpressionAdd'"MaterialExpressionAdd_0"'
+   Expressions(5)=MaterialExpressionAppendVector'"MaterialExpressionAppendVector_0"'
+   Expressions(6)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_0"'
+   Expressions(7)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_1"'
+   Expressions(8)=MaterialExpressionTextureCoordinate'"MaterialExpressionTextureCoordinate_2"'
+   ParameterGroupData(0)=(GroupName="None")
+   ParameterGroupData(1)=(GroupName="None")
+   ParameterGroupData(2)=(GroupName="None")
+   bCanMaskedBeAssumedOpaque=True
+   StateId=9577547B4E604B5AEC9185B855DCCCF4
+   ReferencedTextureGuids(0)=206EA5204EBB0BFFB534E4A2202FF42E
+   ReferencedTextureGuids(1)=2F1AE1424EAECB7847470F9A03C761F3
+   ReferencedTextureGuids(2)=1F23B46E4F57BBFF1EC934A9CFCF41D0
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=659BB60A47F089CD3F1E80AA0E21FE59
+End Object

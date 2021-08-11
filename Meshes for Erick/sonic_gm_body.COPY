@@ -1,0 +1,138 @@
+Begin Object Class=/Script/Engine.Material Name="sonic_gm_body"
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFresnel Name="MaterialExpressionFresnel_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFresnel Name="MaterialExpressionFresnel_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_6"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_7"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_5"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_9"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_2"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionAdd_1"
+      A=(Expression=MaterialExpressionAdd'"sonic_gm_body:MaterialExpressionAdd_3"')
+      B=(Expression=MaterialExpressionMultiply'"sonic_gm_body:MaterialExpressionMultiply_0"')
+      MaterialExpressionEditorX=-304
+      MaterialExpressionGuid=883DE754423344DCE33AA8AF1A3A9834
+      Material=Material'"sonic_gm_body"'
+   End Object
+   Begin Object Name="MaterialExpressionAdd_3"
+      A=(Expression=MaterialExpressionTextureSample'"sonic_gm_body:MaterialExpressionTextureSample_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionMultiply'"sonic_gm_body:MaterialExpressionMultiply_6"')
+      MaterialExpressionEditorX=-384
+      MaterialExpressionGuid=523CB9CD4F909CDE084B90A1FABE0567
+      Material=Material'"sonic_gm_body"'
+   End Object
+   Begin Object Name="MaterialExpressionFresnel_0"
+      MaterialExpressionEditorX=-544
+      MaterialExpressionEditorY=400
+      MaterialExpressionGuid=F4061D8047F390F550368EB094C6C3D1
+      Material=Material'"sonic_gm_body"'
+   End Object
+   Begin Object Name="MaterialExpressionFresnel_3"
+      Exponent=2.000000
+      BaseReflectFraction=0.150000
+      MaterialExpressionEditorX=-1008
+      MaterialExpressionEditorY=208
+      MaterialExpressionGuid=F4061D8047F390F550368EB094C6C3D1
+      Material=Material'"sonic_gm_body"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0"
+      A=(Expression=MaterialExpressionTextureSample'"sonic_gm_body:MaterialExpressionTextureSample_5"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionFresnel'"sonic_gm_body:MaterialExpressionFresnel_0"')
+      MaterialExpressionEditorX=-320
+      MaterialExpressionEditorY=192
+      MaterialExpressionGuid=4DB460174D7E88F9B70EDBA8FD322F3F
+      Material=Material'"sonic_gm_body"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_6"
+      A=(Expression=MaterialExpressionVectorParameter'"sonic_gm_body:MaterialExpressionVectorParameter_2"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionMultiply'"sonic_gm_body:MaterialExpressionMultiply_7"')
+      MaterialExpressionEditorX=-688
+      MaterialExpressionEditorY=32
+      MaterialExpressionGuid=CF07CC1C4EE77A66BFB872B8007FA023
+      Material=Material'"sonic_gm_body"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_7"
+      A=(Expression=MaterialExpressionFresnel'"sonic_gm_body:MaterialExpressionFresnel_3"')
+      ConstB=0.150000
+      MaterialExpressionEditorX=-800
+      MaterialExpressionEditorY=208
+      MaterialExpressionGuid=5D1B1F3D49A18D8A0AAA5D8ED2A0586F
+      Material=Material'"sonic_gm_body"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_0"
+      Texture=Texture2D'"/Game/Characters/Sonic/Models/Sonic/Textures/chr_sonic_body01_dif_HD.chr_sonic_body01_dif_HD"'
+      MaterialExpressionEditorX=-544
+      MaterialExpressionGuid=FFE5033140D8C891E478E38D2EB29635
+      Material=Material'"sonic_gm_body"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_5"
+      Texture=Texture2D'"/Game/Characters/Sonic/Models/Sonic/Textures/chr_sonic_body01_fal_HD.chr_sonic_body01_fal_HD"'
+      MaterialExpressionEditorX=-544
+      MaterialExpressionEditorY=192
+      MaterialExpressionGuid=2CF8980C41DC42BC1548738C6A65A96D
+      Material=Material'"sonic_gm_body"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_9"
+      Texture=Texture2D'"/Game/Characters/Sonic/Models/Sonic/Textures/chr_sonic_body01_POW_HD.chr_sonic_body01_POW_HD"'
+      MaterialExpressionEditorX=-192
+      MaterialExpressionEditorY=48
+      MaterialExpressionGuid=8D8098C14A799B115D49A79573BA3256
+      Material=Material'"sonic_gm_body"'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_2"
+      DefaultValue=(R=1.000000,G=1.000000,B=1.000000,A=0.000000)
+      ParameterName="Falloff Color"
+      ExpressionGUID=513467794350E96E1F2D6E9C2B08D118
+      MaterialExpressionEditorX=-1008
+      MaterialExpressionEditorY=16
+      MaterialExpressionGuid=EA0C6B1E48D6237C119B92BAFDD90150
+      Material=Material'"sonic_gm_body"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionAdd'"MaterialExpressionAdd_1"')
+   Specular=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_9"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Roughness=(Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Normal=(Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   ShadingModel=MSM_Subsurface
+   ShadingModels=(ShadingModelField=4)
+   SubsurfaceColor=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   AmbientOcclusion=(Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   bUsedWithSkeletalMesh=True
+   EditorX=-16
+   Expressions(0)=MaterialExpressionAdd'"MaterialExpressionAdd_1"'
+   Expressions(1)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_9"'
+   Expressions(2)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"'
+   Expressions(3)=MaterialExpressionAdd'"MaterialExpressionAdd_3"'
+   Expressions(4)=MaterialExpressionFresnel'"MaterialExpressionFresnel_3"'
+   Expressions(5)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_2"'
+   Expressions(6)=MaterialExpressionMultiply'"MaterialExpressionMultiply_6"'
+   Expressions(7)=MaterialExpressionMultiply'"MaterialExpressionMultiply_7"'
+   Expressions(8)=MaterialExpressionMultiply'"MaterialExpressionMultiply_0"'
+   Expressions(9)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_5"'
+   Expressions(10)=MaterialExpressionFresnel'"MaterialExpressionFresnel_0"'
+   ParameterGroupData(0)=(GroupName="None")
+   bCanMaskedBeAssumedOpaque=True
+   StateId=713A7ADA4253F49A70F8A284F619BD3C
+   ReferencedTextureGuids(0)=425AA3464236ED15952C1CBFFB8AFD69
+   ReferencedTextureGuids(1)=878573214FD40BC638F8B697E88C4720
+   ReferencedTextureGuids(2)=C0FCAD7A46AC665E7F27098F99992CCE
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=C7CCE93C4994673F9F076696D4824B06
+End Object

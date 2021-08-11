@@ -1,0 +1,35 @@
+Begin Object Class=/Script/Engine.Material Name="sonic_gm_nose"
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_0"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0"
+      ParameterName="Roughness"
+      ExpressionGUID=0ED6FF1C486A55A1976273A265084B57
+      MaterialExpressionEditorX=-240
+      MaterialExpressionEditorY=192
+      MaterialExpressionGuid=C0DC19BF4DE2A5FB1C64B5A61A6B4E74
+      Material=Material'"sonic_gm_nose"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_0"
+      Texture=Texture2D'"/Game/Characters/Sonic/Models/Sonic/Textures/chr_sonic_body01_dif_HD.chr_sonic_body01_dif_HD"'
+      MaterialExpressionEditorX=-272
+      MaterialExpressionGuid=FFE5033140D8C891E478E38D2EB29635
+      Material=Material'"sonic_gm_nose"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Roughness=(Expression=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_0"')
+   bUsedWithSkeletalMesh=True
+   Expressions(0)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"'
+   Expressions(1)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_0"'
+   ParameterGroupData(0)=(GroupName="None")
+   bCanMaskedBeAssumedOpaque=True
+   StateId=FE07F19643DCB7F0C65B02BCC3375717
+   ReferencedTextureGuids(0)=425AA3464236ED15952C1CBFFB8AFD69
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=23310A084091BAE1936AB9B0D642709C
+End Object

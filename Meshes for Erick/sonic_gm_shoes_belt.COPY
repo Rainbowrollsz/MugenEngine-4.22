@@ -1,0 +1,61 @@
+Begin Object Class=/Script/Engine.Material Name="sonic_gm_shoes_belt"
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_10"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_9"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0"
+      A=(Expression=MaterialExpressionTextureSample'"sonic_gm_shoes_belt:MaterialExpressionTextureSample_9"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      ConstB=0.500000
+      MaterialExpressionEditorX=-256
+      MaterialExpressionEditorY=688
+      MaterialExpressionGuid=ADEE24D941E6F1037DF281967D53085D
+      Material=Material'"sonic_gm_shoes_belt"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_0"
+      Texture=Texture2D'"/Game/Characters/Sonic/Models/Sonic/Textures/chr_sonic_shoes_POW_HD.chr_sonic_shoes_POW_HD"'
+      MaterialExpressionEditorX=-272
+      MaterialExpressionEditorY=224
+      MaterialExpressionGuid=663F4E43493E14E5F1212E95CB3F20FF
+      Material=Material'"sonic_gm_shoes_belt"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_10"
+      Texture=Texture2D'"/Game/Characters/Sonic/Models/Sonic/Textures/clothnomralmap.clothnomralmap"'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-272
+      MaterialExpressionEditorY=448
+      MaterialExpressionGuid=476ED4F94E334BA089BFA29528E0D99E
+      Material=Material'"sonic_gm_shoes_belt"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_9"
+      Texture=Texture2D'"/Game/Characters/Sonic/Models/Sonic/Textures/chr_sonic_shoes_dif_HD.chr_sonic_shoes_dif_HD"'
+      MaterialExpressionEditorX=-272
+      MaterialExpressionGuid=476ED4F94E334BA089BFA29528E0D99E
+      Material=Material'"sonic_gm_shoes_belt"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_9"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Specular=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Normal=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_10"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   ShadingModel=MSM_Subsurface
+   ShadingModels=(ShadingModelField=4)
+   SubsurfaceColor=(Expression=MaterialExpressionMultiply'"MaterialExpressionMultiply_0"')
+   bUsedWithSkeletalMesh=True
+   Expressions(0)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_9"'
+   Expressions(1)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"'
+   Expressions(2)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_10"'
+   Expressions(3)=MaterialExpressionMultiply'"MaterialExpressionMultiply_0"'
+   bCanMaskedBeAssumedOpaque=True
+   StateId=51BFB2C046C4743D11C77B9588975BCD
+   ReferencedTextureGuids(0)=F5C6BA7248B7B7FB5F54EABC5B9B24C1
+   ReferencedTextureGuids(1)=2A38930C4D5075F38C5826A0DB6698D3
+   ReferencedTextureGuids(2)=564C6DAC4C8764FE3D9376B204227572
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=BC2CE7C046AFC3F48C8C15AB79F6E200
+End Object

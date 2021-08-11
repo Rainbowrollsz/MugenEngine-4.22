@@ -1,0 +1,73 @@
+Begin Object Class=/Script/Engine.Material Name="sonic_gm_cloth"
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_5"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0"
+      A=(Expression=MaterialExpressionTextureSample'"sonic_gm_cloth:MaterialExpressionTextureSample_3"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      ConstB=0.500000
+      MaterialExpressionEditorX=-160
+      MaterialExpressionEditorY=400
+      MaterialExpressionGuid=ADEE24D941E6F1037DF281967D53085D
+      Material=Material'"sonic_gm_cloth"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_0"
+      UTiling=2.000000
+      VTiling=2.000000
+      MaterialExpressionEditorX=-512
+      MaterialExpressionEditorY=384
+      MaterialExpressionGuid=CF7B4D8D4C02D113A64E258727097A1A
+      Material=Material'"sonic_gm_cloth"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_1"
+      Texture=Texture2D'"/Game/Characters/Sonic/Models/Sonic/Textures/chr_sonic_cloth_POW_HD.chr_sonic_cloth_POW_HD"'
+      MaterialExpressionEditorX=-384
+      MaterialExpressionEditorY=192
+      MaterialExpressionGuid=9F8C627B4BC54C32F39E44AE23E1C1D4
+      Material=Material'"sonic_gm_cloth"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_3"
+      Texture=Texture2D'"/Game/Characters/Sonic/Models/Sonic/Textures/chr_sonic_cloth_dif_HD.chr_sonic_cloth_dif_HD"'
+      MaterialExpressionEditorX=-384
+      MaterialExpressionGuid=9F8C627B4BC54C32F39E44AE23E1C1D4
+      Material=Material'"sonic_gm_cloth"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_5"
+      Texture=Texture2D'"/Game/Characters/Sonic/Models/Sonic/Textures/clothnomralmap.clothnomralmap"'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-384
+      MaterialExpressionEditorY=384
+      MaterialExpressionGuid=9F8C627B4BC54C32F39E44AE23E1C1D4
+      Material=Material'"sonic_gm_cloth"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_3"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Specular=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_1"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Normal=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_5"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   EmissiveColor=(Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   ShadingModel=MSM_Subsurface
+   ShadingModels=(ShadingModelField=4)
+   SubsurfaceColor=(Expression=MaterialExpressionMultiply'"MaterialExpressionMultiply_0"')
+   bUsedWithSkeletalMesh=True
+   Expressions(0)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_3"'
+   Expressions(1)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_1"'
+   Expressions(2)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_5"'
+   Expressions(3)=MaterialExpressionMultiply'"MaterialExpressionMultiply_0"'
+   Expressions(4)=MaterialExpressionTextureCoordinate'"MaterialExpressionTextureCoordinate_0"'
+   bCanMaskedBeAssumedOpaque=True
+   StateId=8C47CB044FC241A6BB04C5BE1A7D8D6A
+   ReferencedTextureGuids(0)=F5C6BA7248B7B7FB5F54EABC5B9B24C1
+   ReferencedTextureGuids(1)=2F1AE1424EAECB7847470F9A03C761F3
+   ReferencedTextureGuids(2)=53609001450EE4B4D9397289B3F7CD31
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=7F8161FB48242099F751B4905B6996F8
+End Object

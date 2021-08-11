@@ -1,0 +1,280 @@
+Begin Object Class=/Script/Engine.Material Name="sonic_gm_eye"
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAppendVector Name="MaterialExpressionAppendVector_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionClamp Name="MaterialExpressionClamp_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionClamp Name="MaterialExpressionClamp_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_10"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_6"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionReflectionVectorWS Name="MaterialExpressionReflectionVectorWS_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureObject Name="MaterialExpressionTextureObject_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTransform Name="MaterialExpressionTransform_0"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionAdd_0"
+      A=(Expression=MaterialExpressionTextureSample'"sonic_gm_eye:MaterialExpressionTextureSample_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionMultiply'"sonic_gm_eye:MaterialExpressionMultiply_10"')
+      MaterialExpressionEditorX=-192
+      MaterialExpressionGuid=0719C5E142523B93E3767A8C831B641D
+      Material=Material'"sonic_gm_eye"'
+   End Object
+   Begin Object Name="MaterialExpressionAdd_1"
+      A=(Expression=MaterialExpressionTextureCoordinate'"sonic_gm_eye:MaterialExpressionTextureCoordinate_2"')
+      B=(Expression=MaterialExpressionAppendVector'"sonic_gm_eye:MaterialExpressionAppendVector_0"')
+      MaterialExpressionEditorX=-272
+      MaterialExpressionEditorY=896
+      MaterialExpressionGuid=911508314FC959A24C9A0CB898A3EF3A
+      Material=Material'"sonic_gm_eye"'
+   End Object
+   Begin Object Name="MaterialExpressionAdd_2"
+      A=(Expression=MaterialExpressionMultiply'"sonic_gm_eye:MaterialExpressionMultiply_0"')
+      B=(Expression=MaterialExpressionTextureSample'"sonic_gm_eye:MaterialExpressionTextureSample_1"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      MaterialExpressionEditorX=-128
+      MaterialExpressionEditorY=448
+      MaterialExpressionGuid=6A18DA2E4DAAE9D4A28AC88E3ED540D7
+      Material=Material'"sonic_gm_eye"'
+   End Object
+   Begin Object Name="MaterialExpressionAppendVector_0"
+      A=(Expression=MaterialExpressionClamp'"sonic_gm_eye:MaterialExpressionClamp_2"')
+      B=(Expression=MaterialExpressionClamp'"sonic_gm_eye:MaterialExpressionClamp_3"')
+      MaterialExpressionEditorX=-416
+      MaterialExpressionEditorY=960
+      MaterialExpressionGuid=3D7BDF0F476BFFA540340EB8542BC793
+      Material=Material'"sonic_gm_eye"'
+   End Object
+   Begin Object Name="MaterialExpressionClamp_2"
+      Input=(Expression=MaterialExpressionScalarParameter'"sonic_gm_eye:MaterialExpressionScalarParameter_2"')
+      MinDefault=-0.100000
+      MaxDefault=0.400000
+      MaterialExpressionEditorX=-672
+      MaterialExpressionEditorY=944
+      MaterialExpressionGuid=532370BA42411F31D5322DA6E335F8F5
+      Material=Material'"sonic_gm_eye"'
+   End Object
+   Begin Object Name="MaterialExpressionClamp_3"
+      Input=(Expression=MaterialExpressionScalarParameter'"sonic_gm_eye:MaterialExpressionScalarParameter_3"')
+      MinDefault=-0.100000
+      MaxDefault=0.100000
+      MaterialExpressionEditorX=-672
+      MaterialExpressionEditorY=1056
+      MaterialExpressionGuid=532370BA42411F31D5322DA6E335F8F5
+      Material=Material'"sonic_gm_eye"'
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_1"
+      MaterialFunction=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions01/Reflections/ViewAlignedReflection.ViewAlignedReflection"'
+      FunctionInputs(0)=(ExpressionInputId=55029790482AD3842C77A4A237363522,Input=(Expression=MaterialExpressionMultiply'"sonic_gm_eye:MaterialExpressionMultiply_6"',InputName="ReflectionVector"))
+      FunctionInputs(1)=(ExpressionInputId=10636CAE4E5BC42DA794E5A69EFDDA28,Input=(Expression=MaterialExpressionTextureObject'"sonic_gm_eye:MaterialExpressionTextureObject_0"',InputName="ReflectionTexture"))
+      FunctionOutputs(0)=(ExpressionOutputId=1CAE9667483A43B95EDF308CF3574B30,Output=(OutputName="Texture"))
+      FunctionOutputs(1)=(ExpressionOutputId=F4C0796047E485437F6DA38BAE9CEAA1,Output=(OutputName="UVs"))
+      MaterialExpressionEditorX=-816
+      MaterialExpressionEditorY=32
+      MaterialExpressionGuid=A4C169A04D9A51BF45B9589C39CFF57B
+      Material=Material'"sonic_gm_eye"'
+      Outputs(0)=(OutputName="Texture")
+      Outputs(1)=(OutputName="UVs")
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0"
+      A=(Expression=MaterialExpressionTextureSample'"sonic_gm_eye:MaterialExpressionTextureSample_3"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      ConstB=1.750000
+      MaterialExpressionEditorX=-272
+      MaterialExpressionEditorY=448
+      MaterialExpressionGuid=B215A5EA4C0ABE88FC3729B385CCAA68
+      Material=Material'"sonic_gm_eye"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_10"
+      A=(Expression=MaterialExpressionMaterialFunctionCall'"sonic_gm_eye:MaterialExpressionMaterialFunctionCall_1"')
+      ConstB=0.250000
+      MaterialExpressionEditorX=-560
+      MaterialExpressionEditorY=32
+      MaterialExpressionGuid=90FF52D548F05CD186837A88F5801F30
+      Material=Material'"sonic_gm_eye"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_6"
+      A=(Expression=MaterialExpressionTransform'"sonic_gm_eye:MaterialExpressionTransform_0"')
+      ConstB=0.750000
+      MaterialExpressionEditorX=-976
+      MaterialExpressionEditorY=32
+      MaterialExpressionGuid=A5D6E633471C44FD1D4744B13B98FE2F
+      Material=Material'"sonic_gm_eye"'
+   End Object
+   Begin Object Name="MaterialExpressionReflectionVectorWS_2"
+      MaterialExpressionEditorX=-1392
+      MaterialExpressionEditorY=16
+      MaterialExpressionGuid=08A783C1413E12312B666998078F7A02
+      Material=Material'"sonic_gm_eye"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0"
+      ParameterName="Roughness"
+      ExpressionGUID=04360CA4413C993212921DAC5108890F
+      MaterialExpressionEditorX=-192
+      MaterialExpressionEditorY=160
+      MaterialExpressionGuid=29BD293A46DD1802ED431FA1ACC6243C
+      Material=Material'"sonic_gm_eye"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_1"
+      DefaultValue=0.001000
+      ParameterName="Metallic"
+      ExpressionGUID=B09BEA4F42E21208B4E89BAD58DB0564
+      MaterialExpressionEditorX=-192
+      MaterialExpressionEditorY=80
+      MaterialExpressionGuid=5DF6151647127657021840A6FCC3B356
+      Material=Material'"sonic_gm_eye"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_2"
+      SliderMin=-0.100000
+      SliderMax=0.400000
+      ParameterName="U EyeOffset"
+      ExpressionGUID=5B03502C4B4006B9D7F319A141D17C3B
+      MaterialExpressionEditorX=-800
+      MaterialExpressionEditorY=928
+      MaterialExpressionGuid=F6C5D0F64DDF9E49D185EC91713F33A5
+      Material=Material'"sonic_gm_eye"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_3"
+      SliderMin=-0.100000
+      SliderMax=0.100000
+      ParameterName="V EyeOffset"
+      ExpressionGUID=164F5047412B85ED23939CB797261C69
+      MaterialExpressionEditorX=-800
+      MaterialExpressionEditorY=1040
+      MaterialExpressionGuid=D63750EC4431FCE90F94FEB1D7D89E17
+      Material=Material'"sonic_gm_eye"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_2"
+      MaterialExpressionEditorX=-416
+      MaterialExpressionEditorY=896
+      MaterialExpressionGuid=19D33B1D4549742F0D0EB483939FEE5F
+      Material=Material'"sonic_gm_eye"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureObject_0"
+      Texture=Texture2D'"/Game/Characters/Sonic/Models/Sonic/Textures/chr_sonic_red_ref_HD.chr_sonic_red_ref_HD"'
+      MaterialExpressionEditorX=-976
+      MaterialExpressionEditorY=128
+      MaterialExpressionGuid=A86A688E4AD8602197912FB494360571
+      Material=Material'"sonic_gm_eye"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_0"
+      Texture=Texture2D'"/Game/Characters/Sonic/Models/Sonic/Textures/chr_sonic_eye_dif_HD.chr_sonic_eye_dif_HD"'
+      MaterialExpressionEditorX=-416
+      MaterialExpressionGuid=18866A534C8AB9EEB33F45A70C3AE080
+      Material=Material'"sonic_gm_eye"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_1"
+      Texture=Texture2D'"/Game/Characters/Sonic/Models/Sonic/Textures/chr_sonic_eye_ems1_HD.chr_sonic_eye_ems1_HD"'
+      MaterialExpressionEditorX=-416
+      MaterialExpressionEditorY=672
+      MaterialExpressionGuid=985135EC4DD7B048829FF78319A76901
+      Material=Material'"sonic_gm_eye"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_2"
+      Texture=Texture2D'"/Game/Characters/Sonic/Models/Sonic/Textures/chr_sonic_eye_nrm_HD.chr_sonic_eye_nrm_HD"'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-416
+      MaterialExpressionEditorY=224
+      MaterialExpressionGuid=2585E1C24319B8895A792CAF1411DE05
+      Material=Material'"sonic_gm_eye"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_3"
+      Texture=Texture2D'"/Game/Characters/Sonic/Models/Sonic/Textures/chr_sonic_eye_emis_HD.chr_sonic_eye_emis_HD"'
+      MaterialExpressionEditorX=-416
+      MaterialExpressionEditorY=448
+      MaterialExpressionGuid=2585E1C24319B8895A792CAF1411DE05
+      Material=Material'"sonic_gm_eye"'
+   End Object
+   Begin Object Name="MaterialExpressionTransform_0"
+      Input=(Expression=MaterialExpressionReflectionVectorWS'"sonic_gm_eye:MaterialExpressionReflectionVectorWS_2"')
+      TransformSourceType=TRANSFORMSOURCE_World
+      TransformType=TRANSFORM_View
+      MaterialExpressionEditorX=-1184
+      MaterialExpressionEditorY=16
+      MaterialExpressionGuid=62D54C294DE87963583E0DBB28BBF173
+      Material=Material'"sonic_gm_eye"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionAdd'"MaterialExpressionAdd_0"')
+   Metallic=(Expression=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_1"')
+   Roughness=(Expression=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_0"')
+   Normal=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_2"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   EmissiveColor=(Expression=MaterialExpressionAdd'"MaterialExpressionAdd_2"')
+   ShadingModel=MSM_ClearCoat
+   ShadingModels=(ShadingModelField=16)
+   CustomizedUVs(0)=(Expression=MaterialExpressionAdd'"MaterialExpressionAdd_1"')
+   NumCustomizedUVs=1
+   bUsedWithSkeletalMesh=True
+   Expressions(0)=MaterialExpressionAdd'"MaterialExpressionAdd_0"'
+   Expressions(1)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_1"'
+   Expressions(2)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_0"'
+   Expressions(3)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_2"'
+   Expressions(4)=MaterialExpressionAdd'"MaterialExpressionAdd_2"'
+   Expressions(5)=MaterialExpressionAdd'"MaterialExpressionAdd_1"'
+   Expressions(6)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_3"'
+   Expressions(7)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"'
+   Expressions(8)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_1"'
+   Expressions(9)=MaterialExpressionTextureObject'"MaterialExpressionTextureObject_0"'
+   Expressions(10)=MaterialExpressionReflectionVectorWS'"MaterialExpressionReflectionVectorWS_2"'
+   Expressions(11)=MaterialExpressionTransform'"MaterialExpressionTransform_0"'
+   Expressions(12)=MaterialExpressionMultiply'"MaterialExpressionMultiply_6"'
+   Expressions(13)=MaterialExpressionMultiply'"MaterialExpressionMultiply_10"'
+   Expressions(14)=MaterialExpressionAppendVector'"MaterialExpressionAppendVector_0"'
+   Expressions(15)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_2"'
+   Expressions(16)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_3"'
+   Expressions(17)=MaterialExpressionTextureCoordinate'"MaterialExpressionTextureCoordinate_2"'
+   Expressions(18)=MaterialExpressionClamp'"MaterialExpressionClamp_2"'
+   Expressions(19)=MaterialExpressionClamp'"MaterialExpressionClamp_3"'
+   Expressions(20)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_1"'
+   Expressions(21)=MaterialExpressionMultiply'"MaterialExpressionMultiply_0"'
+   ParameterGroupData(0)=(GroupName="None")
+   ParameterGroupData(1)=(GroupName="None")
+   ParameterGroupData(2)=(GroupName="None")
+   ParameterGroupData(3)=(GroupName="None")
+   bCanMaskedBeAssumedOpaque=True
+   StateId=3DBC1A334C022D9316F58C9251AC8ED0
+   ReferencedTextureGuids(0)=1B3CAAB04E8205FC4FCB7BBA353594A4
+   ReferencedTextureGuids(1)=0394A45E4A2D32914539F6B6B4699687
+   ReferencedTextureGuids(2)=EAC86A2A4377FEB977B31390C1DA7CC8
+   ReferencedTextureGuids(3)=A6137B06492EE1B49A0FF091EA1DEB2D
+   ReferencedTextureGuids(4)=A848CC1F4DB8AD00272B6E986FD0B67E
+   TextureStreamingDataVersion=1
+   TextureStreamingData(0)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="chr_sonic_eye_dif_HD",TextureReference=/Game/Characters/Sonic/Models/Sonic/Textures/chr_sonic_eye_dif_HD.chr_sonic_eye_dif_HD)
+   TextureStreamingData(1)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="chr_sonic_eye_emis_HD",TextureReference=/Game/Characters/Sonic/Models/Sonic/Textures/chr_sonic_eye_emis_HD.chr_sonic_eye_emis_HD)
+   TextureStreamingData(2)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="chr_sonic_eye_ems1_HD",TextureReference=/Game/Characters/Sonic/Models/Sonic/Textures/chr_sonic_eye_ems1_HD.chr_sonic_eye_ems1_HD)
+   TextureStreamingData(3)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="chr_sonic_eye_nrm_HD",TextureReference=/Game/Characters/Sonic/Models/Sonic/Textures/chr_sonic_eye_nrm_HD.chr_sonic_eye_nrm_HD)
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   ParameterOverviewExpansion=(("-12Global", True))
+   LightingGuid=AD17B672492BAA8293043AA731B4915D
+End Object

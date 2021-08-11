@@ -1,0 +1,190 @@
+Begin Object Class=/Script/Engine.Material Name="sonic_gm_shoes_red"
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_10"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_6"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionOneMinus Name="MaterialExpressionOneMinus_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionReflectionVectorWS Name="MaterialExpressionReflectionVectorWS_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureObject Name="MaterialExpressionTextureObject_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTransform Name="MaterialExpressionTransform_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_0"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionAdd_1"
+      A=(Expression=MaterialExpressionVectorParameter'"sonic_gm_shoes_red:MaterialExpressionVectorParameter_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionMultiply'"sonic_gm_shoes_red:MaterialExpressionMultiply_10"')
+      MaterialExpressionEditorX=-192
+      MaterialExpressionGuid=0719C5E142523B93E3767A8C831B641D
+      Material=Material'"sonic_gm_shoes_red"'
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_1"
+      MaterialFunction=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions01/Reflections/ViewAlignedReflection.ViewAlignedReflection"'
+      FunctionInputs(0)=(ExpressionInputId=55029790482AD3842C77A4A237363522,Input=(Expression=MaterialExpressionMultiply'"sonic_gm_shoes_red:MaterialExpressionMultiply_6"',InputName="ReflectionVector"))
+      FunctionInputs(1)=(ExpressionInputId=10636CAE4E5BC42DA794E5A69EFDDA28,Input=(Expression=MaterialExpressionTextureObject'"sonic_gm_shoes_red:MaterialExpressionTextureObject_0"',InputName="ReflectionTexture"))
+      FunctionOutputs(0)=(ExpressionOutputId=1CAE9667483A43B95EDF308CF3574B30,Output=(OutputName="Texture"))
+      FunctionOutputs(1)=(ExpressionOutputId=F4C0796047E485437F6DA38BAE9CEAA1,Output=(OutputName="UVs"))
+      MaterialExpressionEditorX=-784
+      MaterialExpressionEditorY=16
+      MaterialExpressionGuid=A4C169A04D9A51BF45B9589C39CFF57B
+      Material=Material'"sonic_gm_shoes_red"'
+      Outputs(0)=(OutputName="Texture")
+      Outputs(1)=(OutputName="UVs")
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0"
+      A=(Expression=MaterialExpressionVectorParameter'"sonic_gm_shoes_red:MaterialExpressionVectorParameter_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      ConstB=0.250000
+      MaterialExpressionEditorX=-192
+      MaterialExpressionEditorY=256
+      MaterialExpressionGuid=A0FBA6F74F3457C0067513B96CD6F547
+      Material=Material'"sonic_gm_shoes_red"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_1"
+      A=(Expression=MaterialExpressionOneMinus'"sonic_gm_shoes_red:MaterialExpressionOneMinus_0"')
+      ConstB=0.750000
+      MaterialExpressionEditorX=-144
+      MaterialExpressionEditorY=416
+      MaterialExpressionGuid=8AE62438463DFBA0348C8BB466202BD6
+      Material=Material'"sonic_gm_shoes_red"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_10"
+      A=(Expression=MaterialExpressionMaterialFunctionCall'"sonic_gm_shoes_red:MaterialExpressionMaterialFunctionCall_1"')
+      ConstB=0.125000
+      MaterialExpressionEditorX=-544
+      MaterialExpressionEditorY=16
+      MaterialExpressionGuid=90FF52D548F05CD186837A88F5801F30
+      Material=Material'"sonic_gm_shoes_red"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_6"
+      A=(Expression=MaterialExpressionTransform'"sonic_gm_shoes_red:MaterialExpressionTransform_0"')
+      ConstB=0.750000
+      MaterialExpressionEditorX=-944
+      MaterialExpressionEditorY=16
+      MaterialExpressionGuid=A5D6E633471C44FD1D4744B13B98FE2F
+      Material=Material'"sonic_gm_shoes_red"'
+   End Object
+   Begin Object Name="MaterialExpressionOneMinus_0"
+      Input=(Expression=MaterialExpressionTextureSample'"sonic_gm_shoes_red:MaterialExpressionTextureSample_2"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      MaterialExpressionEditorX=-224
+      MaterialExpressionEditorY=416
+      MaterialExpressionGuid=DBEB43964354118391A31C9FE3BCF9B7
+      Material=Material'"sonic_gm_shoes_red"'
+   End Object
+   Begin Object Name="MaterialExpressionReflectionVectorWS_2"
+      MaterialExpressionEditorX=-1344
+      MaterialExpressionGuid=08A783C1413E12312B666998078F7A02
+      Material=Material'"sonic_gm_shoes_red"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0"
+      DefaultValue=0.250000
+      ParameterName="Metallic"
+      ExpressionGUID=0974764E416203025E8AE6906E018C59
+      MaterialExpressionEditorX=-192
+      MaterialExpressionEditorY=96
+      MaterialExpressionGuid=380A51C44521099E00E53C834291DCD5
+      Material=Material'"sonic_gm_shoes_red"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_1"
+      DefaultValue=0.250000
+      ParameterName="Roughness"
+      ExpressionGUID=3BC82AF1486B71FE453B85946799244C
+      MaterialExpressionEditorX=-192
+      MaterialExpressionEditorY=176
+      MaterialExpressionGuid=A2E233FF431CC08D67413792999F0726
+      Material=Material'"sonic_gm_shoes_red"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureObject_0"
+      Texture=Texture2D'"/Game/Characters/Sonic/Models/Sonic/Textures/chr_sonic_red_ref_HD.chr_sonic_red_ref_HD"'
+      MaterialExpressionEditorX=-944
+      MaterialExpressionEditorY=112
+      MaterialExpressionGuid=A86A688E4AD8602197912FB494360571
+      Material=Material'"sonic_gm_shoes_red"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_2"
+      Texture=Texture2D'"/Game/Characters/Sonic/Models/Sonic/Textures/DirtMap.DirtMap"'
+      MaterialExpressionEditorX=-400
+      MaterialExpressionEditorY=416
+      MaterialExpressionGuid=18866A534C8AB9EEB33F45A70C3AE080
+      Material=Material'"sonic_gm_shoes_red"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_3"
+      Texture=Texture2D'"/Game/StarterContent/Textures/T_Metal_Gold_N.T_Metal_Gold_N"'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-400
+      MaterialExpressionEditorY=176
+      MaterialExpressionGuid=18866A534C8AB9EEB33F45A70C3AE080
+      Material=Material'"sonic_gm_shoes_red"'
+   End Object
+   Begin Object Name="MaterialExpressionTransform_0"
+      Input=(Expression=MaterialExpressionReflectionVectorWS'"sonic_gm_shoes_red:MaterialExpressionReflectionVectorWS_2"')
+      TransformSourceType=TRANSFORMSOURCE_World
+      TransformType=TRANSFORM_View
+      MaterialExpressionEditorX=-1152
+      MaterialExpressionGuid=62D54C294DE87963583E0DBB28BBF173
+      Material=Material'"sonic_gm_shoes_red"'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_0"
+      DefaultValue=(R=0.500000,G=0.000000,B=0.000000,A=0.000000)
+      ExpressionGUID=87A7B0CA4A3C96D869E2E8BCB75743ED
+      MaterialExpressionEditorX=-400
+      MaterialExpressionEditorY=-16
+      MaterialExpressionGuid=84E891974CB64550D2911BB122D8B4E0
+      Material=Material'"sonic_gm_shoes_red"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionAdd'"MaterialExpressionAdd_1"')
+   Metallic=(Expression=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_0"')
+   Specular=(Expression=MaterialExpressionMultiply'"MaterialExpressionMultiply_1"')
+   Roughness=(Expression=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_1"')
+   Normal=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_3"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   ShadingModel=MSM_Subsurface
+   ShadingModels=(ShadingModelField=4)
+   SubsurfaceColor=(Expression=MaterialExpressionMultiply'"MaterialExpressionMultiply_0"')
+   bUsedWithSkeletalMesh=True
+   Expressions(0)=MaterialExpressionAdd'"MaterialExpressionAdd_1"'
+   Expressions(1)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_0"'
+   Expressions(2)=MaterialExpressionMultiply'"MaterialExpressionMultiply_1"'
+   Expressions(3)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_1"'
+   Expressions(4)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_3"'
+   Expressions(5)=MaterialExpressionMultiply'"MaterialExpressionMultiply_0"'
+   Expressions(6)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_0"'
+   Expressions(7)=MaterialExpressionOneMinus'"MaterialExpressionOneMinus_0"'
+   Expressions(8)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_2"'
+   Expressions(9)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_1"'
+   Expressions(10)=MaterialExpressionTextureObject'"MaterialExpressionTextureObject_0"'
+   Expressions(11)=MaterialExpressionReflectionVectorWS'"MaterialExpressionReflectionVectorWS_2"'
+   Expressions(12)=MaterialExpressionTransform'"MaterialExpressionTransform_0"'
+   Expressions(13)=MaterialExpressionMultiply'"MaterialExpressionMultiply_6"'
+   Expressions(14)=MaterialExpressionMultiply'"MaterialExpressionMultiply_10"'
+   ParameterGroupData(0)=(GroupName="None")
+   ParameterGroupData(1)=(GroupName="None")
+   ParameterGroupData(2)=(GroupName="None")
+   bCanMaskedBeAssumedOpaque=True
+   StateId=2440230547C09B190773D68091407B3C
+   ReferencedTextureGuids(0)=D02218B84AE96463B80BAEBDCE6D5610
+   ReferencedTextureGuids(1)=A848CC1F4DB8AD00272B6E986FD0B67E
+   ReferencedTextureGuids(2)=1F23B46E4F57BBFF1EC934A9CFCF41D0
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=357652AA4DCE3A9A5AA16B991624F7A4
+End Object

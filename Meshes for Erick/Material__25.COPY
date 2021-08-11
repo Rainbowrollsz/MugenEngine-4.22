@@ -1,0 +1,131 @@
+Begin Object Class=/Script/Engine.Material Name="Material__25"
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_10"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_6"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionReflectionVectorWS Name="MaterialExpressionReflectionVectorWS_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureObject Name="MaterialExpressionTextureObject_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTransform Name="MaterialExpressionTransform_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_0"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionAdd_1"
+      A=(Expression=MaterialExpressionVectorParameter'"Material__25:MaterialExpressionVectorParameter_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionMaterialFunctionCall'"Material__25:MaterialExpressionMaterialFunctionCall_1"')
+      MaterialExpressionEditorX=-128
+      MaterialExpressionGuid=0719C5E142523B93E3767A8C831B641D
+      Material=Material'"Material__25"'
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_1"
+      MaterialFunction=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions01/Reflections/ViewAlignedReflection.ViewAlignedReflection"'
+      FunctionInputs(0)=(ExpressionInputId=55029790482AD3842C77A4A237363522,Input=(Expression=MaterialExpressionMultiply'"Material__25:MaterialExpressionMultiply_6"',InputName="ReflectionVector"))
+      FunctionInputs(1)=(ExpressionInputId=10636CAE4E5BC42DA794E5A69EFDDA28,Input=(Expression=MaterialExpressionTextureObject'"Material__25:MaterialExpressionTextureObject_0"',InputName="ReflectionTexture"))
+      FunctionOutputs(0)=(ExpressionOutputId=1CAE9667483A43B95EDF308CF3574B30,Output=(OutputName="Texture"))
+      FunctionOutputs(1)=(ExpressionOutputId=F4C0796047E485437F6DA38BAE9CEAA1,Output=(OutputName="UVs"))
+      MaterialExpressionEditorX=-592
+      MaterialExpressionEditorY=176
+      MaterialExpressionGuid=A4C169A04D9A51BF45B9589C39CFF57B
+      Material=Material'"Material__25"'
+      Outputs(0)=(OutputName="Texture")
+      Outputs(1)=(OutputName="UVs")
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_10"
+      A=(Expression=MaterialExpressionMaterialFunctionCall'"Material__25:MaterialExpressionMaterialFunctionCall_1"')
+      ConstB=0.100000
+      MaterialExpressionEditorX=-368
+      MaterialExpressionEditorY=176
+      MaterialExpressionGuid=90FF52D548F05CD186837A88F5801F30
+      Material=Material'"Material__25"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_6"
+      A=(Expression=MaterialExpressionTransform'"Material__25:MaterialExpressionTransform_0"')
+      ConstB=0.750000
+      MaterialExpressionEditorX=-752
+      MaterialExpressionEditorY=176
+      MaterialExpressionGuid=A5D6E633471C44FD1D4744B13B98FE2F
+      Material=Material'"Material__25"'
+   End Object
+   Begin Object Name="MaterialExpressionReflectionVectorWS_0"
+      MaterialExpressionEditorX=-1152
+      MaterialExpressionEditorY=160
+      MaterialExpressionGuid=08A783C1413E12312B666998078F7A02
+      Material=Material'"Material__25"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0"
+      DefaultValue=0.750000
+      ParameterName="Metallic"
+      ExpressionGUID=4D6FD3E744F29F4F338247AECB20D56C
+      MaterialExpressionEditorX=-224
+      MaterialExpressionEditorY=160
+      MaterialExpressionGuid=0F9B7E834B41276427388AAEE688800A
+      Material=Material'"Material__25"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_1"
+      DefaultValue=0.350000
+      ParameterName="Roughness"
+      ExpressionGUID=7A6764584C0B9F0091894C973E6B27F7
+      MaterialExpressionEditorX=-224
+      MaterialExpressionEditorY=240
+      MaterialExpressionGuid=A1803D0F445CB623D9DDA7854A0DC046
+      Material=Material'"Material__25"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureObject_0"
+      Texture=Texture2D'"/Game/Characters/Sonic/Models/Sonic/Textures/chr_sonic_red_ref_HD.chr_sonic_red_ref_HD"'
+      MaterialExpressionEditorX=-752
+      MaterialExpressionEditorY=272
+      MaterialExpressionGuid=A86A688E4AD8602197912FB494360571
+      Material=Material'"Material__25"'
+   End Object
+   Begin Object Name="MaterialExpressionTransform_0"
+      Input=(Expression=MaterialExpressionReflectionVectorWS'"Material__25:MaterialExpressionReflectionVectorWS_0"')
+      TransformSourceType=TRANSFORMSOURCE_World
+      TransformType=TRANSFORM_View
+      MaterialExpressionEditorX=-960
+      MaterialExpressionEditorY=160
+      MaterialExpressionGuid=62D54C294DE87963583E0DBB28BBF173
+      Material=Material'"Material__25"'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_0"
+      DefaultValue=(R=0.000000,G=0.500000,B=0.083333,A=0.000000)
+      ExpressionGUID=3FF2F7094BA9E59E07A9A3B2316591E1
+      MaterialExpressionEditorX=-336
+      MaterialExpressionEditorY=-16
+      MaterialExpressionGuid=B9D23E9B4E15D8A8E1A23596548990EB
+      Material=Material'"Material__25"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionAdd'"MaterialExpressionAdd_1"')
+   Metallic=(Expression=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_0"')
+   Roughness=(Expression=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_1"')
+   Expressions(0)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_0"'
+   Expressions(1)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_0"'
+   Expressions(2)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_1"'
+   Expressions(3)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_1"'
+   Expressions(4)=MaterialExpressionTextureObject'"MaterialExpressionTextureObject_0"'
+   Expressions(5)=MaterialExpressionReflectionVectorWS'"MaterialExpressionReflectionVectorWS_0"'
+   Expressions(6)=MaterialExpressionTransform'"MaterialExpressionTransform_0"'
+   Expressions(7)=MaterialExpressionMultiply'"MaterialExpressionMultiply_6"'
+   Expressions(8)=MaterialExpressionMultiply'"MaterialExpressionMultiply_10"'
+   Expressions(9)=MaterialExpressionAdd'"MaterialExpressionAdd_1"'
+   ParameterGroupData(0)=(GroupName="None")
+   ParameterGroupData(1)=(GroupName="None")
+   ParameterGroupData(2)=(GroupName="None")
+   bCanMaskedBeAssumedOpaque=True
+   StateId=F2468A67452EE1C53E06B8AF03907633
+   ReferencedTextureGuids(0)=A848CC1F4DB8AD00272B6E986FD0B67E
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=AC2EEA984B1F7CAFF867DEA9336341F3
+End Object
